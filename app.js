@@ -3,12 +3,12 @@ let numberImages = document.getElementById('number');
 
 let contenidoTabla = document.getElementById('table')
 let nuevaFila = document.createElement('tr')
-nuevaFila.innerHTML = `
-<tr>
-    <td>
-    
-    </td>
-</tr>
+nuevaFila.innerHTML += `
+      <tr>
+        <th>Image</th>
+        <th>ID</th>
+        <th>Description</th>
+      </tr>
 `;
 
 function showingImages(){
