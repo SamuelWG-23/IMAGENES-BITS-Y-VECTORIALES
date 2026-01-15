@@ -22,7 +22,7 @@ function showingImages(numberImages) {
     let nuevaFila = document.createElement('tr');
     nuevaFila.innerHTML = `
       <tr>
-        <th><img src="https://picsum.photos/id/${randomIdImage}/200/300" loading="lazy"></img></th>
+        <th><img src="https://picsum.photos/id/${randomIdImage}/200/300" loading="lazy" width="100px" height="100" style = "border-radius: 50%" ></img></th>
         <th>${randomIdImage}</th>
         <th>Imagen ${i+1 }</th>
       </tr>
