@@ -1,9 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 .titulo{
   text-align: center;
 }
 body{
   background-color: rgb(198, 198, 250);
   font-size: large;
+  font-family: Roboto, sans-serif;
 }
 
 table{
@@ -23,4 +26,9 @@ select{
 }
 
 
+
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
+}
 
