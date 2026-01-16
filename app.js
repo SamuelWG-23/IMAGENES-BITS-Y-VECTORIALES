@@ -1,4 +1,17 @@
 //JavaScript de las imágenes
+function nocache(){
+  var tc3=new Date();
+  var delta=tc3-tc1;
+  if (delta>2000) {
+    window.location.reload();
+  } else {
+    tc1=tc3;
+  }
+}
+var tc1=new Date();
+setInterval(nocache,1000);
+
+
 let idIterator = 1;
 const selectorValue = document.getElementById('number');
 
@@ -9,7 +22,7 @@ selectorValue.addEventListener('change', function () {
 
 
 function showingImages(numberImages) {
-  let contenidoTabla = document.getElementById('table');
+  let contenidoTabla = document.getElementById('table'); 
   contenidoTabla.innerHTML = `
     <table id="table">
       <tr>
